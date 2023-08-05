@@ -14,7 +14,7 @@ public class SpacedLogger implements Logger {
 	@Override
 	public void error(String Error) {
 		Date date = new Date();       // added this is so we have a time and date stamp. 
-		 System.out.println("Log - "+ date.toString() + ":" + "ERROR" + ":" + " " + Error.replaceAll(".(?!$)", "$0  ").trim());
+		 System.out.println("Error - "+ date.toString() + ":" + "ERROR" + ":" + " " + Error.replaceAll(".(?!$)", "$0  ").trim());
 		
 		
 	}
